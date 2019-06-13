@@ -1,5 +1,6 @@
 # CUGB-MS-thesis
 Latex template for MS thesis of China University of Geosciences (CUGB)
+
 Original author: [Silver](https://github.com/silverriver/CUGBthesis/commits?author=silverriver)
 
 中国地质大学（北京）硕士毕业论文Latex模板（基于项目 [CUGBthesis](https://github.com/silverriver/CUGBthesis) 修改而来）
