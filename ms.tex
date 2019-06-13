@@ -12,7 +12,7 @@
 
 %---------加载宏包----------
 \usepackage{fontspec}					%设置英文字体
-\setmainfont{Times New Roman}
+\setmainfont{Nimbus Roman No9 L}
 
 \usepackage{amsmath}			%数学公式
 \usepackage{amssymb}			%数学符号
@@ -23,6 +23,7 @@
 \usepackage{multirow}	%做表格要用到宏包
 \usepackage{hyperref}	%链接宏包
 
+
 \usepackage[style=base,justification=centering,font=small]{caption}	%更改标题要用到的宏包
 \DeclareCaptionLabelSeparator{nocolon}{~}							%图编号与标题之间不带冒号
 \captionsetup{labelsep=nocolon}										%图编号与标题之间不带冒号：
@@ -31,9 +32,10 @@
 \renewcommand{\theequation}{\thechapter-\arabic{equation}}			%设置公式编号的连接符是-
 
 \usepackage{fancyhdr}										%设置页眉页脚
+\fancyhf{}\renewcommand*{\headrulewidth}{0.75bp}
 \fancyhead[L]{}
 \fancyhead[R]{}
-\fancyhead[CE]{\small 中国地质大学（北京）博士学位论文}		%偶数页页眉
+\fancyhead[CE]{\small 中国地质大学（北京）硕士学位论文}		%偶数页页眉
 \fancyhead[CO]{\small \leftmark}							%奇数页页眉
 \fancyfoot[C]{\thepage}										%页码
 
@@ -53,7 +55,7 @@
 	fixskip=true,
 	},
   section={
-	format=\heiti\zihao{3}\centering,			%3号黑体
+	format=\heiti\zihao{3},			%3号黑体
 	beforeskip=2ex plus 0.1ex minus 0.1ex,		%与正文内容的间距
 	afterskip=2ex plus 0.1ex minus 0.1ex,
 	},
@@ -69,16 +71,16 @@
 \newcommand{\figwidth}{13cm}
 
 %----------文档信息-------------
-\newcommand\timu{标题}
-\newcommand\zuozhe{作者}
-\newcommand\xuehao{学号}
-\newcommand\daoshi{导师}
+\newcommand\timu{此处填入中文题目}
+\newcommand\zuozhe{此处填入姓名}
+\newcommand\xuehao{\textbf{2001190001}}
+\newcommand\daoshi{此处填入导师}
 \newcommand\daoshizhicheng{教授}
-\newcommand\zhuanye{专业}
-\newcommand\fangxiang{方向}
-\newcommand\riqi{时间}
+\newcommand\zhuanye{此处填入所学专业}
+\newcommand\fangxiang{此处填入研究方向}
+\newcommand\riqi{2019年6月}
 
-\newcommand\yingwentimu{Title}
+\newcommand\yingwentimu{English Title Here}
 \newcommand\yingwenzuozhe{Author}
 \newcommand\yingwenzhuanye{Major}
 \newcommand\yingwenfangxiang{Research area}
@@ -98,19 +100,20 @@
 
 \pagenumbering{roman}				%设置页码格式为罗马数字
 \pagestyle{plain}					%不要页眉
-\include{chapters/abstract}			%摘
+\include{chapters/abstract}			%摘要
 \tableofcontents					%目录
 
 \cleardoublepage					%另起一页
 \pagenumbering{arabic}				%设置页码格式为阿拉伯数字
 \pagestyle{fancy}					%设定页眉
 \include{chapters/chapter1}			%第1章
-%\include{chapters/chapter2}			%第2章
+\include{chapters/chapter2}			%第2章
 %\include{chapters/chapter3}			%第3章
 %\include{chapters/chapter4}			%第4章
 %\include{chapters/chapter5}			%第5章
 %\include{chapters/chapter6}
 \include{chapters/bib}				%手动添加参考文献，因为没有找到合适的.bst文件。如果有更好的办法欢迎补充
+\include{chapters/Acknowledgement}
 
 \appendix							%开始附录
 \include{chapters/appendixA}		%附录A
