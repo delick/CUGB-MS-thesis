@@ -39,6 +39,16 @@
 \fancyhead[CO]{\small \leftmark}							%奇数页页眉
 \fancyfoot[C]{\thepage}										%页码
 
+%---------强制页眉显示------------
+\fancypagestyle{plain}{
+\fancyhf{}\renewcommand*{\headrulewidth}{0.75bp}
+\fancyhead[L]{}
+\fancyhead[R]{}
+\fancyhead[CE]{\small 中国地质大学（北京）硕士学位论文}		%偶数页页眉
+\fancyhead[CO]{\small \leftmark}							%奇数页页眉
+\fancyfoot[C]{\thepage}										%页码
+}
+
 %---------设置各种间距-----------
 \setlength{\intextsep} {3.5ex plus 0.2ex minus 0.2ex}			%浮动体与文字之间的距离
 \setlength{\textfloatsep} {3.5ex plus 0.2ex minus 0.2ex}		%浮动体与页面顶部或者底部的距离
