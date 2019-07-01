@@ -22,3 +22,8 @@ Original author: [Silver](https://github.com/silverriver/CUGBthesis/commits?auth
 
     后记：
     由于在准备毕业论文的过程中MS Office出了问题，搞了一天也没有搞定，于是一怒之下把写好的初稿搬到了tex中。经过搜索没有发现前辈们留下的tex模板。貌似地大同学没有用tex写过博士论文的样子。所以只能自己动手。
+
+
+## 分支
+- `master` 硕士论文，其中章节首页不带页眉
+- `allHeader` 各个页面均带页眉。
